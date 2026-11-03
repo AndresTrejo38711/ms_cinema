@@ -1,0 +1,687 @@
+{
+  "info": {
+    "_postman_id": "d5909d49-a884-49bc-9181-f4cc90a3e633",
+    "name": "Cinema",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5179140"
+  },
+  "item": [
+    {
+      "name": "Theaters",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{cinema_ms}}/theaters",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test2\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Projectors",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{cinema_ms}}/projectors",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "projectors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/projectors/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "projectors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create-with-theater",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"brand\": \"Epson\",\r\n  \"high\": 1080,\r\n  \"width\": 1920,\r\n  \"theaterId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/projectors",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "projectors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test2\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/theaters/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "theaters",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/projectors/2",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "projectors",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Seat",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{cinema_ms}}/seats",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "seats"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/seats/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "seats",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"A1\",\r\n  \"reclining\": true,\r\n  \"theaterId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/seats",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "seats"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"A1\",\r\n  \"reclining\": true,\r\n  \"theaterId\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/seats/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "seats",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/seats/2",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "seats",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{cinema_ms}}/movies",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/movies/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "movies",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Interestelar\",\r\n  \"duration\": 169,\r\n  \"date\": \"2014-11-07\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/movies",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "movies"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Interestelar\",\r\n  \"duration\": 170,\r\n  \"date\": \"2014-11-07\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/movies/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "movies",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/movies/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "movies",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Screenings",
+      "item": [
+        {
+          "name": "findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{cinema_ms}}/screenings",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "screenings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "findById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/screenings/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "screenings",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"scheduledAt\": \"2026-11-15T19:30:00-05:00\",\r\n  \"theaterId\": 2,\r\n  \"movieId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/screenings",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "screenings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"scheduledAt\": \"2026-11-15T19:30:00-05:00\",\r\n  \"theaterId\": 3,\r\n  \"movieId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/screenings/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "screenings",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"location\": \"Test\",\r\n  \"capacity\": 150\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{cinema_ms}}/screenings/1",
+              "host": [
+                "{{cinema_ms}}"
+              ],
+              "path": [
+                "screenings",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "cinema_ms",
+      "value": ""
+    }
+  ]
+}
