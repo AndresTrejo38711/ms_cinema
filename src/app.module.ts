@@ -6,6 +6,9 @@ import { ProjectorsModule } from './projectors/projectors.module';
 import { SeatsModule } from './seats/seats.module';
 import { MoviesModule } from './movies/movies.module';
 import { ScreeningsModule } from './screenings/screenings.module';
+import { APP_GUARD } from '@nestjs/core';
+import { SecurityGuard } from './common/guards/security.guard';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -29,6 +32,13 @@ import { ScreeningsModule } from './screenings/screenings.module';
     SeatsModule,
     MoviesModule,
     ScreeningsModule,
+  ],
+  providers: [
+    AppService,
+    {
+      provide: APP_GUARD,
+      useClass: SecurityGuard,
+    },
   ],
 })
 export class AppModule {}
